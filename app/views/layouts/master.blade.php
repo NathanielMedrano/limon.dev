@@ -4,15 +4,15 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<link rel="stylesheet" href="normalize.css" type="text/css" media="screen">
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-
-	<!-- Optional theme -->
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
-
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-		
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+	<script src="/js/jquery.raptorize.1.0.js"></script>
+	<script type="text/javascript">
+	     $(window).load(function() {
+	          $('#dino').raptorize();
+	     });
+	</script>
+	
 	<style type="text/css"> 
  
  #navbar ul { 
@@ -40,7 +40,7 @@
 	} 
 
 	#bc {
-		background-size:100% 260%;
+		background-size:100% 225%;
 		background-repeat:no-repeat;
 	}
 
@@ -50,6 +50,12 @@
 		   width:100%;
 		   height:50px;   /* Height of the footer */
 		 
+	}
+
+	#dinoB {
+		 margin-left:50%;
+  margin-right:50%;
+  
 	}
  
 </style> 
@@ -67,7 +73,9 @@
 	<li><a href="{{{ action('HomeController@showContact') }}}">CONTACT</a></li> 
   </ul> 
 </div> 
-
+<div id='dinoB'>
+<button type="button" id='dino'>Click Me!</button>
+</div>
 </body>
 <br>
 <center><footer id='foot'>
